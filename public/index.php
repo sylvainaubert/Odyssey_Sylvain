@@ -2,9 +2,10 @@
 
 require '../vendor/autoload.php';
 
-
-$talk = new \App\Wcs\Hello();
+use App\Wcs\Hello;
+$talk = new Hello();
 echo $talk->talk();
 
-$hello = new \HelloWorld\SayHello();
+use HelloWorld\SayHello;
+$hello = new SayHello();
 echo $hello->world();
